@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Helmet>
                 <meta charSet="utf-8" />
-                <title>Alex</title>
+                <title>Alex Diyan</title>
                 <meta name="description" content="Web Developer's portfolio website" />
       </Helmet>
     <Context>
