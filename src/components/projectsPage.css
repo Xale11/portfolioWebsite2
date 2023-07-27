@@ -1,0 +1,299 @@
+.projectPage{
+    background-color: var(--black1);
+    background-image: url("../img/projectsListBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-shadow: var(--dropText);
+}
+
+.projectsPageBg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vw;
+    aspect-ratio: 1000/686.81;
+
+}
+
+.projectPageContent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    gap: 1em;
+    overflow-y: auto;
+}
+.ppNavbar{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2em;
+    position: relative;
+}
+
+.toHome{
+    align-self: flex-end;
+    justify-self: flex-start;
+    left: 10vh;
+    position: fixed;
+    text-decoration: underline;
+    font-size: 0.75em;
+    color: var(--pink);
+}
+
+
+.projectsPageTitle{
+    font-size: 2em;
+    text-shadow: var(--dropText);
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.ppCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    gap: 2em;
+}
+
+.ppCard{
+    background-color: var(--black2);
+    width: 80em;
+    height: 25em;
+    border-radius: 3em;
+    box-shadow: var(--dropS7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.ppTitle{
+    font-size: 1.25em;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+    height: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.ppDets{
+    display: flex;
+    height: calc(100% - 2em);
+    width: 100%;
+}
+
+.ppDetsL{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ppImg{
+    height: 60%;
+    width: auto;
+    object-fit: scale-down;
+    border-radius: 1em;
+    box-shadow: var(--dropS4);
+}
+
+.ppBtns{
+    height: calc(50% - 2em);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.ppBtn{
+    background-color: var(--primary);
+    width: 70%;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: var(--dropS4);
+    transition: all 300ms linear;
+    cursor: pointer;
+}
+
+.ppBtn:hover{
+    letter-spacing: 1px;
+}
+
+.ppDetsR{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.ppCta{
+    background-color: var(--tertiary);
+    text-align: center;
+    width: 80%;
+    height: 4em;
+    box-shadow: var(--dropS4);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms linear;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.ppCta:hover{
+    letter-spacing: 1px;
+}
+
+
+.ppDesc{
+    width: 80%;
+    font-size: 1.25em;
+    color: #D9D9D9;
+}
+
+.ppTools{
+    width: 80%;
+    font-size: 1.25em;
+    color: #D9D9D9;
+}
+
+.orangeBg{
+    background-color: var(--secondary);
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1441px) {
+    /* Large Laptops*/
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .ppCard{
+            width: 80vw;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .ppImg{
+            max-width: 100%;
+            height: auto;
+            max-height: 60%;
+        }
+        .ppCard{
+            padding-left: 1em;
+            padding-right: 1em
+        }
+        .ppDesc{
+            font-size: 1em;
+            line-height: calc(1em * 1.2);
+        }
+        .ppTools{
+            font-size: 1em;
+            line-height: calc(1em * 1.1);
+        }
+        .toHome{
+            left: 1vw;
+        }
+    }
+    
+    @media screen and (max-width: 920px) and (min-width: 821px) {
+    /*2 in 1's, and some large tablets in portrait*/
+    }
+    
+    @media screen and (max-width: 820px/*or 920px*/) and (orientation: portrait) {
+    /* Large Tablets, Ipads, Small Laptop, 2 in 1's (Portrait)*/
+    }
+    
+    @media screen and (max-width: 800px) and (orientation: landscape){
+    /* small tablets - landscape*/
+    }
+    
+    @media screen and (max-width: 600px) and (orientation: portrait) {
+        .ppDesc{
+            font-size: 0.9em;
+            line-height: calc(0.9em * 1.2);
+        }
+        .ppTools{
+            font-size: 0.9em;
+            line-height: calc(0.9em * 1.1);
+        }
+        .ppCta{
+            height: auto;
+            padding: 0.5em 0em;
+        }
+        .ppCta:hover{
+            letter-spacing: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 430px) and (orientation: portrait) {
+        .ppCard{
+            height: fit-content;
+        }
+        .ppTitle{
+            margin-bottom: 1em;
+        }
+        .ppDets{
+            flex-direction: column;
+            gap: 0.em;
+        }
+        .ppDetsL{
+            height: 30vh;
+        }
+        .ppDetsR{
+            gap: 1em;
+            height: min-content;
+        }
+        .ppImg{
+            margin-bottom: 0.5em;
+        }
+        .ppDesc{
+            display: none;
+        }
+        .ppTools{
+            display: none;
+        }
+    }
+    
+    @media screen and (max-height: 740px) and (orientation: portrait) {
+        .ppDets{
+            flex-direction: column;
+            gap: 1.2em;
+        }
+    }
+
+    @media screen and (orientation: landscape) and (max-height: 430px){
+        .projectPage{
+            background-image: none;
+        }
+    }
+    
+    @media screen and (max-width: 320px){
+    /*optional - iphone 4*/
+    }

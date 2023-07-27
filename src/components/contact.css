@@ -1,0 +1,244 @@
+.contact{
+    background-color: var(--black1);
+    width: 100vw;
+    height: 100vh;
+    z-index: -3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: var(--dropText);
+}
+
+.contactTitle{
+    margin-top: 2em;
+    font-size: 2em;
+    text-shadow: var(--dropText);
+    z-index: 3;
+}
+
+.contactMsg{
+    font-size: 0.75em;
+    margin-top: 2em;
+    z-index: 3;
+    margin-bottom: 3em;
+}
+
+.contactContent{
+    display: flex;
+    z-index: 3;
+}
+
+.contactLinks{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.contactLink{
+    width: 100%;
+    height: 7em;
+    margin-left: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    cursor: pointer;
+}
+
+.clCircle{
+    background-color: var(--black2);
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    box-shadow: var(--dropS4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms linear;
+}
+
+.contactLink:hover .clCircle{
+    background-color: var(--secondary);
+}
+
+.clCircle svg{
+    font-size: 3em;
+}
+
+.clName{
+    font-size: 1.25em;
+}
+
+.contactMailer{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.inputName{
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+
+.inputArea{
+    background-color: var(--black2);
+    border: none;
+    height: 4em;
+    width: 90%;
+    border-radius: 2em;
+    outline: none;
+    padding-left: 1em;
+    box-shadow: var(--dropS4);
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.messageSection{
+    height: 30vh;
+    padding-top: 0.5em;
+}
+
+.send{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send div{
+    background-color: var(--secondary);
+    font-size: 1.25em;
+    padding: 0.5em 0em;
+    width: 7em;
+    text-align: center;
+    border-radius: 1em;
+    align-self: flex-end;
+    box-shadow: var(--dropS4);
+}
+
+@media screen and (max-width: 1550px) {
+    .contact{
+        align-items: center;
+        justify-self: center;
+        gap: 1em;
+    }
+    .contactTitle{
+        margin-top: 1em;
+    }
+    .contactMsg{
+        margin: 0em;
+    }
+    .clCircle{
+        width: 5em;
+        height: 5em;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .clName{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 680px) {
+    .clCircle{
+        width: 4em;
+        height: 4em;
+    }
+    .inputName{
+        font-size: 1em;
+    }
+    .inputArea{
+        height: 3em;
+    }
+    .messageSection{
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 920px) and (orientation: portrait) { 
+    .contactContent{
+        gap: 1em;
+    }
+    .contactLinks{
+    }
+    .clName{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape){
+    .contactLinks{
+        gap: 0em;
+    }
+    .clName{
+        width: 30vw;
+        font-size: 0.85em;
+    }
+    .clCircle{
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .clName{
+        width: 30vw;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .clName{
+        display: none;
+    }
+    .contactLinks{
+        width: fit-content;
+        gap: 0em;
+    }
+    .contactMailer{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-height: 430px) and (orientation: landscape){
+    .clName{
+        display: none;
+    }
+    .contactLinks{
+        display: none;
+    }
+    .contactMailer{
+        width: 100vw;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 70vh;
+        
+    }
+    .input{
+        width: 40vw;
+    }
+    .messageSection{
+        height: 40vh;
+    }
+    .send{
+        height: 2em;
+        width: 5em;
+        margin-top: 1em;
+    }
+}

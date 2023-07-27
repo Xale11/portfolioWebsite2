@@ -1,0 +1,229 @@
+.service{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black1);
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid var(--pink);
+    color: white;
+    text-shadow: var(--dropText);
+}
+
+.serviceBg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60vw;
+
+}
+
+.serviceContent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-shadow: var(--dropText);
+    gap: 3em;
+    z-index: 1;
+}
+
+.serviceTitle{
+    margin-top: 2em;
+    font-size: 2em;
+    text-shadow: var(--dropText);
+    text-align: center;
+}
+
+.serviceCards{
+    display: flex;
+    gap: 8em;
+}
+
+.serviceCard{
+    background-color: var(--black2);
+    height: 65vh;
+    width: 20vw;
+    border-radius: 3em;
+    box-shadow: 0px 0px 60px var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
+    transition: all 300ms linear;
+}
+
+.serviceCard:hover{
+    box-shadow: 0px 0px 80px var(--tertiary);
+}
+
+
+
+.scTitle{
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.scImg{
+    width: 7em;
+}
+
+.scDesc{
+    text-align: center;
+    width: 70%;
+    font-size: 1em;
+    line-height: calc(1.25em * 1.3);
+}
+
+.scCta{
+    background-color: var(--primary);
+    padding: 1em 0em;
+    width: 60%;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    box-shadow: var(--dropS4);
+    margin-bottom: 3em;
+    cursor: pointer;
+    transition: all 300ms linear;
+    text-decoration: none;
+    color: white;
+}
+
+.scCta:hover{
+    width: 50%;
+}
+
+.scExtra{
+    display: none;
+    text-decoration: underline;
+    font-size: 0.85em;
+    color: var(--pink);
+    transition: all 300ms linear;
+}
+
+.scExtra:hover{
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.serviceOffer{
+    margin-top: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1550px)  {
+    .serviceCard{
+        font-size: 0.75em;
+    }
+    .serviceOffer{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .serviceCards{
+        width: 100vw;
+        gap: 0em;
+        justify-content: space-around;
+    }
+    .serviceCard{
+        width: 30vw;
+        justify-content: center;
+        height: 55vh;
+    }
+
+    .scTitle{
+        width: 100%;
+        height: 3em;
+    }
+    .scDesc{
+        height: 40%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 680px) {
+    .serviceCard{
+        width: 30vw;
+        justify-content: center;
+        height: 70vh;
+    }
+
+    .serviceTitle{
+        margin: 0em;
+        margin-top: 0.5em;
+    }
+
+    .serviceOffer{
+        margin: 0em;
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape){
+    .serviceCards{
+        font-size: .9em;
+    }
+    .serviceOffer{
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .serviceContent{
+        justify-content: center;
+    }
+    .serviceCards{
+        font-size: 0.75em;
+    }
+    .serviceCard{
+        height: fit-content;
+    }
+    .scDesc{
+        display: none;
+    }
+    .scExtra{
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .serviceContent{
+        gap: 0em;
+    }
+    .serviceCards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+    .serviceCard{
+        width: 50vw;
+        height: 25vh;
+        gap: 0em;
+    }
+    .serviceOffer{
+        font-size: .75em;
+    }
+    .serviceTitle{
+        margin-top: 0em;
+    }
+}
+
+@media screen and (max-height: 430px) and (orientation: landscape){
+    .serviceContent{
+        gap: 1em;
+    }
+    .scDesc{
+        display: none;
+    }
+}

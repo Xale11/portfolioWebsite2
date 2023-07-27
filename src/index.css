@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "astroSpace";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: "astroSpace";
+  src: url(./font/AstroSpace-eZ2Bg.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Watatsuki Tech Sans";
+  src: url(./font/WatatsukiTechSans-GOJxA.ttf);
+  font-style: normal;
 }
