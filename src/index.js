@@ -6,11 +6,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './components/projectsPage';
 import ServicePage from './components/servicePage';
 import Context from './context/context';
+import { Helmet } from 'react-helmet';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Alex</title>
+                <meta name="description" content="Web Developer's portfolio website" />
+      </Helmet>
     <Context>
       <BrowserRouter>
           <Routes>
