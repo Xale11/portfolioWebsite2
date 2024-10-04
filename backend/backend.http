@@ -1,0 +1,37 @@
+GET http://localhost:5083
+###
+GET http://localhost:5083/projects
+###
+POST http://localhost:5083/projects
+Content-Type: application/json
+
+{
+    "title": "Project 3",
+    "Description": "Test project 3.0",
+    "Tools": ["Typescript", "React", "C#", ".NET", "SQL Server"],
+    "WebUrl": "websiteurl",
+    "GitHubUrl": "githuburl"
+}
+###
+GET http://localhost:5083/profiles
+###
+POST http://localhost:5083/profiles
+Content-Type: application/json
+
+{
+    "Name": "Alex Diyan2",
+    "LongDescription": "LDesc",
+    "ShortDescription": "SDesc",
+    "KeySkills": ["TypeScript", "React", ".NET", "C#"],
+    "OtherSkills": ["Figma", "Arduino"],
+    "CVUrl": "CVUrl",
+    "YearsCoding": 6,
+    "YearsWebDev": 3,
+    "PhoneNumber": "07908244288",
+    "Email": "alexdiyan@outlook.com",
+    "Address": "Milton Keynes"
+}
+###
+GET http://localhost:5083/services
+###
+GET http://localhost:5083/socials
